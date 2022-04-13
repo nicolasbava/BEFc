@@ -549,9 +549,9 @@
             font-weight: 800;
             padding-block: 4rem;
             padding-inline: 2rem;
-            background-attachment: fixed;
+            /* background-attachment: fixed; */
 
-            margin-top: -13vh;
+            margin-top: -14vh;
 
         }
         /*
