@@ -403,6 +403,16 @@
             padding: 0;
             background-color: black;
         } */
+
+        .container {
+            padding-inline: 10%;
+            background: #e8e8e8;
+            /* margin-top: 20vh;
+            margin-bottom: 20vh; */
+            position: relative;
+            top: -13vh;
+            padding-top: 2vh;
+        }
         
         .poster {
             cursor: pointer;
@@ -424,15 +434,7 @@
             
         }
         
-        .container {
-            padding-inline: 10%;
-            background: #e8e8e8;
-            /* margin-top: 20vh;
-            margin-bottom: 20vh; */
-            position: relative;
-            top: -13vh;
-
-        }
+        
         
         .poster img {
             z-index: 95;
@@ -946,7 +948,7 @@
             
             .banner1 {
                 padding-top: 4em;
-                padding-bottom: 6em;
+                padding-bottom: 7em;
                 padding-inline: 4em;
             }
             .banner1 p {
