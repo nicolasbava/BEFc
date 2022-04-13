@@ -590,21 +590,21 @@
                 background-image: url(./04.png);
             }
         }
-        /*
+/*
   * ─── 6 CV WISNY - GALERIA ─────────────────────────────────────────────────────────
   */
-        /* CV WISNY BACKGROUNDS */
+        /* GALLERY ONLY BACKGROUNDS CV WISNY  */
         
         .slide-bg1 {
-            background: url(../imagenes/assets/cv1.JPG);
+            background: url(../imagenes/assets/cv3.JPG);
         }
         
         .slide-bg2 {
-            background: url(../imagenes/assets/cv2.JPG);
+            background: url(../imagenes/assets/cv1.JPG);
         }
         
         .slide-bg3 {
-            background: url(../imagenes/assets/cv3.JPG);
+            background: url(../imagenes/assets/cv2.JPG);
         }
         
         .slide-bg4 {
@@ -620,7 +620,7 @@
         }
         
         .slide {
-            background-position: center center;
+            background-position: top center;
             background-size: cover;
             background-color: rgba(0, 0, 0, .3);
             background-repeat: no-repeat;
@@ -631,8 +631,8 @@
         }
 
         
-        /* ABAJO */
-        /*
+    
+/*
  * ─── 7 AFRO TV mobile ──────────────────────────────────────────────────────────────────
  */
         
@@ -665,15 +665,13 @@
             padding-inline: 1em;
         }
 /*
- * ─── 8 CV WISNY JavaScript ────────────────────────────────────────────────────────────────
+ * ─── 8 SLIDER CV WISNY / GALERIA css ────────────────────────────────────────────────────────────────
  */
 
     
 /*
  * ─── GALERIA IMAGENES BACKGROUNDS ───────────────────────────────────────────────
- */
-
-    
+ */  
         
         .carousel {
             background: rgba(0, 0, 0, 1);
@@ -681,8 +679,6 @@
             width: 100%;
             min-height: min(100vh, 80vh);
             position: relative;
-
-
         }
         
         .carousel ul li {}
@@ -698,9 +694,6 @@
             inset: 0;
             opacity: 0;
             transition: 0.8s opacity ease-in-out;
-
-
-
         }
         
         .slide>img {
@@ -726,7 +719,7 @@
             font-size: clamp(4rem, 16vw, 20rem);
             top: 50%;
             transform: translateY(-50%);
-            color: rgba(255, 255, 255, .2);
+            color: rgba(255, 255, 255, .5);
             cursor: pointer;
             border-radius: .25rem;
             padding: 0 .5rem;
@@ -756,11 +749,12 @@
         }
         
         .cartel-cv h3 {
-            padding-block: .1em;
-            padding-inline: .3em;
+            /* padding-block: .1em;
+            padding-inline: .3em; */
+            padding: .1em .3em;
             display: inline-block;
             background-color: #0029b1;
-            font-size: clamp(1rem, 3.4vw, 4.3rem);
+            font-size: clamp(1.5rem, 2.6vw, 4.9rem);
             font-weight: 800;
         }
         
@@ -770,7 +764,8 @@
             margin-bottom: .6em;
             display: inline-block;
             background-color: #0029b1;
-            font-size: clamp(1rem, 3.4vw, 4.3rem);
+            font-size: clamp(1.4rem, 2.5vw, 4.8rem);
+
             font-weight: 800;
             letter-spacing: .7;
         }
@@ -946,7 +941,7 @@
                 word-spacing: 5px;
             }
 
- /*  * ─── BANNER NEGRO MEDIA ────────────────────────────────────────── */
+ /*  * ─── BANNER NEGRO query ────────────────────────────────────────── */
             
             .banner1 {
                 padding-top: 4em;
@@ -966,7 +961,7 @@
                 font-weight: 800;
             }
             /*
-     * ─── 7 AFRO TV DESKTOP ────────────────────────────────────────────────────────────
+     * ─── AFRO TV query ────────────────────────────────────────────────────────────
      */
             .afroTV {
                 display: grid;
@@ -980,7 +975,7 @@
             }
             /* CARTEL CV WISNY */
             .cartel-cv {
-                top: 9em;
+                top: 7em;
                 left: 12%;
             }
             .cartel-cv h3 {
@@ -990,7 +985,7 @@
                 margin-right: 20%;
             }
             /*
-      * ─── 9 FOOTER DESKTOP ───────────────────────────────────────────────────────────
+      * ─── 9 FOOTER query ───────────────────────────────────────────────────────────
      */
             footer {
                 justify-content: center;
