@@ -635,7 +635,7 @@
  */
         
         .afroTV {
-            background: url(../imagenes/fondos/FONDO-AFRO.png) no-repeat;
+            background: url(./FONDO-AFRO.png) no-repeat;
             background-size: cover;
             color: var(--clr-blanco);
             text-transform: none;
