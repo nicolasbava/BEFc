@@ -7,9 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- METAS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@700&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">    
     <!-- GOOGLE FONTS -->
+    <link rel="stylesheet" href="./fonts/franklinG/FRANKGO.ttf">
+    <link rel="stylesheet" href="./fonts/franklinG/FranklinGothic.ttf">
+    <link rel="stylesheet" href="./fonts/franklinG/Franklin\ Gothic\ Condensed.ttf">
+    <!-- libre franklin local font -->
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
@@ -23,38 +28,7 @@
 </head>
 
 <body>
-<script> 
-
-/* BACKGROUND CHANGER IN CALL TO ACTION
-    ONLY IF SCREEN.WIDTH IS WIDER THAN 680 */
-if (screen.width >= 680) { 
-    var images = new Array();
-            images[0] = "url(./02c.png)";
-            images[1] = "url(./01c.png)";
-            images[2] = "url(./02c.png)";
-            images[3] = "url(./01c.png)";
-
-        var contador = 0;
-
-            window.onload = function(){
-                cambiarImagen();
-            }
-    cambiarImagen = function(){
-           
-
-
-        if(contador === images.length){
-            contador = 0;
-        }
-        const section = document.querySelector('.call');
-        const bg = images[contador];
-        console.log(bg)        
-        contador++;
-        setTimeout(cambiarImagen, 10000);
-        section.style.backgroundImage = bg
-    }   
-}
-</script>    
+    
     <!-- 0 HEADER NAVIGATOR -->
     <header>
         <div class="divisor-header"></div>
@@ -333,8 +307,44 @@ if (screen.width >= 680) {
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="./js/app.js"></script>
+    <script> 
+
+        
+        </script>
 
     <script>
+
+        /* BACKGROUND CHANGER IN CALL TO ACTION
+            ONLY IF SCREEN.WIDTH IS WIDER THAN 680 */
+            if (screen.width >= 680) { 
+            var images = new Array();
+                    images[0] = "url(./02c.png)";
+                    images[1] = "url(./01c.png)";
+                    images[2] = "url(./02c.png)";
+                    images[3] = "url(./01c.png)";
+        
+                var contador = 0;
+        
+                    window.onload = function(){
+                        cambiarImagen();
+                    }
+            cambiarImagen = function(){
+                   
+        
+        
+                if(contador === images.length){
+                    contador = 0;
+                }
+                const section = document.querySelector('.call');
+                const bg = images[contador];
+                console.log(bg)        
+                contador++;
+                setTimeout(cambiarImagen, 10000);
+                section.style.backgroundImage = bg
+            }   
+        }
+
+        /* RELLAX JS - PARALLAX */
         var rellax = new Rellax(".rellax");
 
         $('.owl-carousel').owlCarousel({
@@ -354,7 +364,8 @@ if (screen.width >= 680) {
                 }
             }
         })
-
+        
+        /* AOS ANIMATIONS */
 
         AOS.init();
     </script>
