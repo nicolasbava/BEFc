@@ -19,12 +19,16 @@
 </head>
 
 <body>
-<script>
+<script> 
+
+/* BACKGROUND CHANGER IN CALL TO ACTION
+    ONLY IF SCREEN.WIDTH IS WIDER THAN 680 */
+if (screen.width >= 680) { 
     var images = new Array();
-            images[0] = "url(../02.jpg)";
-            images[1] = "url(../01.jpg)";
-            images[2] = "url(../02.jpg)";
-            images[3] = "url(../01.jpg)";
+            images[0] = "url(./02c.png)";
+            images[1] = "url(./01c.png)";
+            images[2] = "url(./02c.png)";
+            images[3] = "url(./01c.png)";
 
         var contador = 0;
 
@@ -45,21 +49,21 @@
         setTimeout(cambiarImagen, 10000);
         section.style.backgroundImage = bg
     }   
-
+}
 </script>    
     <!-- 0 HEADER NAVIGATOR -->
     <header>
         <div class="divisor-header"></div>
-        <a href="#home" class="logo"><img src="../imagenes/LOGO-MENU.png" alt="BLACK EXISTENCE FILMS logo"></a>
+        <a href="#home" class="logo"><img src="./imagenes/LOGO-MENU.png" alt="BLACK EXISTENCE FILMS logo"></a>
         <input type="checkbox" name="nav--toggle" class="nav--toggle" id="nav--toggle">
         <nav>
             <ul>
                 <li><a href="#home">INGLES</a></li>
-                <li><a href="#cartelera">CARTELERA</a></li>
-                <li><a href="#loquehacemos">NOSOTROS</a></li>
-                <li><a href="#cvwisny">CV WISNY</a></li>
-                <li><a href="#afroTV">AFRO TV</a></li>
-                <li><a href="#contacto">CONTACTO</a></li>
+                <li><a href="#cartelera">INGLES</a></li>
+                <li><a href="#loquehacemos">INGLES</a></li>
+                <li><a href="#cvwisny">INGLES</a></li>
+                <li><a href="#afroTV">INGLES</a></li>
+                <li><a href="#contacto">INGLES</a></li>
 
             </ul>
         </nav>
@@ -79,7 +83,9 @@
 
         <!-- 1 CALL -->
         <section class="call" id="home">
-            <div class="cartel" data-aos="fade" data-aos-duration="1500">
+            <div class="cartel rellax" data-rellax-speed="0.3" 
+            data-aos="fade"
+             data-aos-duration="1500">
                 <h1>Black Existence Films </h1>
                 <h2>es una productora audiovisual </h2>
                 <h2>independiente de afrodescendiente</h2>
@@ -90,8 +96,8 @@
         </section>
 
         <!-- 2 BANNER NEGRO -->
-        <section class="banner1 ukiyo">
-            <p data-aos-delay="300" data-aos="fade" data-aos-duration="1500">En Black Existencia Films promovemos la inclusión socioeconómica y la cultura de los afrodescendientes en el mundo, brindando oportunidades laborales a actores, técnicos y personal audiovisual afrodescendiente y afro inmigrante y generando
+        <section class="banner1 ukiyo rellax" data-rellax-speed="1" > 
+            <p data-aos-delay="300" data-aos="fade" data-aos-duration="1500" >En Black Existencia Films promovemos la inclusión socioeconómica y la cultura de los afrodescendientes en el mundo, brindando oportunidades laborales a actores, técnicos y personal audiovisual afrodescendiente y afro inmigrante y generando
                 contenidos para llegar a las comunidades, transmitir mensajes y así visibilizar las realidades vividas. </p>
 
         </section>
@@ -102,7 +108,7 @@
             <div class="owl-carousel owl-theme hijos">
                 
                     <div class="poster poster1">
-                        <img src="../imagenes/cartelera/01.png" alt="">
+                        <img src="./imagenes/cartelera/01.png" loading="lazy" alt="">
 
                         <div class="poster-cartel ">
                             <h3>LOS HERMANOS AFRO</h3>
@@ -113,7 +119,7 @@
                         </div>
                     </div>
                 <div class="poster poster2">
-                    <img src="../imagenes/cartelera/02.png" alt="">
+                    <img src="./imagenes/cartelera/02.png" loading="lazy" alt="">
                     <div class="poster-cartel">
                             <h3>EL AFORTUNADO</h3>
                         <p>
@@ -125,7 +131,7 @@
                     </div>
                 </div>
                 <div class="poster poster3">
-                    <img src="../imagenes/cartelera/03.png" alt="">
+                    <img src="./imagenes/cartelera/03.png" loading="lazy" alt="">
 
                     <div class="poster-cartel">
                             <h3> 
@@ -138,12 +144,10 @@
                     </div>
                 </div>
                 <div class="poster poster4">
-                    <img src="../imagenes/cartelera/04.png" alt="">
+                    <img src="./imagenes/cartelera/04.png" loading="lazy" alt="">
 
                     <div class="poster-cartel">
-                        <a href="#">
-                            <h3> 4 LOS HERMANOS AFRO</h3>
-                        </a>
+                        <h3> 4 LOS HERMANOS AFRO</h3>
                         <p>JUNE 2014 BIKENTOS IS A YOUNG HAITIAN MAN LIVING IN BUENOS AIRES, WITH HIS SISTER GUERLINE, ONE AFTERNOON SHE RECEIVES A CALL FOR A JOB INTERVIEW AND LEAVES EXCITED. THE NEXT DAY, BIEKNETOSS IS LOOKING FOR HER AND SHE IS MISSING.</p>
                         <a href="https://www.youtube.com/watch?v=eCXPBnqyeXU" target="_blank">
                             <p> Ver Pelicula</p>
@@ -151,30 +155,26 @@
                     </div>
                 </div>
                 <div class="poster poster5">
-                    <img src="../imagenes/cartelera/05.png" alt="">
+                    <img src="./imagenes/cartelera/05.png" loading="lazy" alt="">
 
                     <div class="poster-cartel">
-                        <a href="#">
-                            <h3> 5 LOS HERMANOS AFRO</h3>
-                        </a>
+                        <h3> 5 LOS HERMANOS AFRO</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam, rerum fugit harum totam ea, deleniti quaerat sequi, alias possimus inventore! Neque praesentium natus cupiditate minus totam maxime assumenda sed.</p>
-                    </div>
                     <a href="https://www.youtube.com/watch?v=eCXPBnqyeXU" target="_blank">
                         <p> Ver Pelicula</p>
                     </a>
+                    </div>
                 </div>
                 <div class="poster poster6">
-                    <img src="../imagenes/cartelera/06.png" alt="">
+                    <img src="./imagenes/cartelera/06.png" loading="lazy" alt="">
 
                     <div class="poster-cartel">
-                        <a href="#">
-                            <h3> 6 LOS HERMANOS AFRO</h3>
-                        </a>
+                        <h3> 6 LOS HERMANOS AFRO</h3>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam, rerum fugit harum totam ea, deleniti quaerat sequi, alias possimus inventore! Neque praesentium natus cupiditate minus totam maxime assumenda sed.</p>
-                    </div>
                     <a href="https://www.youtube.com/watch?v=eCXPBnqyeXU" target="_blank">
                         <p> Ver Pelicula</p>
                     </a>
+                    </div>
                 </div>
 
             </div>
@@ -182,7 +182,7 @@
 
         <!-- 4 BANNER ANARANJADO -->
         <section class="banner2">
-            <p data-aos-delay="300" data-aos="fade" data-aos-duration="1500">En Black Existencia Films promovemos la inclusión socioeconómica y la cultura de los afrodescendientes en el mundo, brindando oportunidades laborales a actores, técnicos y personal audiovisual afrodescendiente y afro inmigrante y generando
+            <p data-aos-delay="300" data-aos="fade-right" data-aos-duration="800" data-aos-easing="linear">En Black Existencia Films promovemos la inclusión socioeconómica y la cultura de los afrodescendientes en el mundo, brindando oportunidades laborales a actores, técnicos y personal audiovisual afrodescendiente y afro inmigrante y generando
                 contenidos para llegar a las comunidades, transmitir mensajes y así visibilizar las realidades vividas. </p>
         </section>
 
@@ -200,24 +200,26 @@
                 <ul data-slides>
 
                     <li class="slide slide-bg1" data-active>
-                        <div class="cartel-cv ">
-                            <h3>BLACK EXISTENCE CV OF WISNY DORCE</h3>
-                            <h4>BLACK EXISTENCE FILMS' CEO</h4>
-                            <p>Mi nombre real de Wisny Dorce es Wisner Dorcelus pero me</p>
-                            <p> conocen por mi nombre artístico que es Wisny Dorce. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, in necessitatibus id exercitationem commodi, </p>
+                        <div class="cartel-cv " >
+                            <h3>BLACK EXISTENCE CV OF </h3>
+                            <h4>WISNY DORCE BLACK EXISTENCE FILMS' CEO</h4>
+                            <p>Mi nombre real de Wisny Dorce es Wisner Dorcelus pero me
+                            conocen por mi nombre artístico que es Wisny Dorce. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, in necessitatibus id exercitationem commodi, </p>
                         </div>
                     </li>
 
                     <li class="slide slide-bg2">
                         <div class="cartel-cv">
-                            <h3>MAS INFO</h3>
+                            <h3>BLACK EXISTENCE CV OF </h3>
+                            <h4>WISNY DORCE BLACK EXISTENCE FILMS' CEO</h4>
                             <p>aca pongo mas contenido tipo de la historia de wisny</p>
                         </div>
                     </li>
 
                     <li class="slide slide-bg3">
                         <div class="cartel-cv">
-                            <h3>MUCHA MAS INFO SOBRE WISNY</h3>
+                            <h3>BLACK EXISTENCE CV OF </h3>
+                            <h4>WISNY DORCE BLACK EXISTENCE FILMS' CEO</h4>
                             <p>aca pongo mas contenido tipo de la historia de wisny</p>
                         </div>
                     </li>
@@ -249,7 +251,7 @@
 
         <!-- 7 AFRO TV -->
         <section class="afroTV" id="afroTV">
-            <div data-aos="fade" data-aos-duration="1500"><img src="../imagenes/AFRO.png" alt="Logo Afro TV">
+            <div data-aos="fade" data-aos-duration="1500"><img src="./imagenes/AFRO.png" loading="lazy" alt="Logo Afro TV">
             </div>
 
             <div class="cartel" data-aos="fade" data-aos-duration="1500" data-aos-delay="300">
@@ -269,28 +271,22 @@
                 <ul data-slides>
 
                     <li class="slide" data-active>
-                        <img src="../imagenes/galeria/01.jpg" alt="Nature Image #1">
+                        <img src="./imagenes/galeria/01.jpg" loading="lazy" alt="Nature Image #1">
                     </li>
 
                     <li class="slide">
-                        <img src="../imagenes/galeria/02.jpg" alt="Nature Image #2">
+                        <img src="./imagenes/galeria/02.jpg" loading="lazy" alt="Nature Image #2">
                     </li>
 
                     <li class="slide">
-                        <img src="../imagenes/galeria/03.jpg" alt="Nature Image #3">
+                        <img src="./imagenes/galeria/03.jpg" loading="lazy" alt="Nature Image #3">
                     </li>
 
                     <li class="slide">
-                        <img src="../imagenes/galeria/04.jpg" alt="Nature Image #3">
+                        <img src="./imagenes/galeria/04.jpg" loading="lazy" alt="Nature Image #3">
                     </li>
 
-                    <li class="slide">
-                        <img src="../imagenes/galeria/05.jpg" alt="Nature Image #3">
-                    </li>
-
-                    <li class="slide">
-                        <img src="../imagenes/galeria/06.jpg" alt="Nature Image #3">
-                    </li>
+                    
                 </ul>
             </div>
         </section>
@@ -298,32 +294,32 @@
 
     <!-- 9 FOOTER -->
 
-    <footer>
+    <footer >
         <div>
-            <img src="../imagenes/BLACK_EXISTENCE.png" sizes="(min-width: 760px) 25vw, 50vw" alt="Logo Black Existence con texto" class="logo-footer">
+            <img src="./imagenes/BLACK_EXISTENCE.png" sizes="(min-width: 760px) 25vw, 50vw" alt="Logo Black Existence con texto" loading="lazy" class="logo-footer">
         </div>
         <div class="cartel">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nam quas pariatur. Ea, quis eveniet! Deleniti est alias consequatur iusto, fugiat magni velit voluptates! Eos est excepturi dicta deleniti quas.</p>
+            <p >Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi nam quas pariatur. Ea, quis eveniet! Deleniti est alias consequatur iusto, fugiat magni velit voluptates! Eos est excepturi dicta deleniti quas.</p>
         </div>
         <div class="iconos">
             <a href="https://www.facebook.com/BlackexistenciaFilms" target="_blank">
-                <img src="../imagenes/FB.png" alt="Logo Black Existence Films Facebook">
+                <img src="./imagenes/FB.png" loading="lazy" alt="Logo Black Existence Films Facebook">
             </a>
             <a href="https://twitter.com/blackexistencia?s=11" target="_blank">
-                <img src="../imagenes/TW.png" alt="Logo Black Existence Films Twitter">
+                <img src="./imagenes/TW.png" loading="lazy" alt="Logo Black Existence Films Twitter">
             </a>
             <a href="https://www.youtube.com/c/BLACKEXISTENCIAFILMS" target="_blank">
-                <img src="../imagenes/YTB.png" alt="Logo Black Existence Films YouTube">
+                <img src="./imagenes/YTB.png" loading="lazy" alt="Logo Black Existence Films YouTube">
             </a>
             <a href="https://www.instagram.com/black_existencia__films/?utm_medium=copy_link" target="_blank">
-                <img src="../imagenes/INSTAGRAM.png" alt="Logo Black Existence Films Instagram">
+                <img src="./imagenes/INSTAGRAM.png" loading="lazy" alt="Logo Black Existence Films Instagram">
             </a>
         </div>
     </footer>
 
 
     <!-- SCRIPTS JAVASCRIPT CAROUSELS -->
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" integrity="sha512-f5HTYZYTDZelxS7LEQYv8ppMHTZ6JJWglzeQmr0CVTS70vJgaJiIO15ALqI7bhsracojbXkezUIL+35UXwwGrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -335,6 +331,8 @@
     <script src="./js/app.js"></script>
 
     <script>
+        var rellax = new Rellax(".rellax");
+
         $('.owl-carousel').owlCarousel({
             loop: true,
             margin: 10,
