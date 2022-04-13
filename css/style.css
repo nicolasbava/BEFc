@@ -723,7 +723,7 @@
             cursor: pointer;
             border-radius: .25rem;
             padding: 0 .5rem;
-            transition: 500ms ease;
+            /* transition: 500ms ease; */
         }
         
         .carousel-button:hover {
